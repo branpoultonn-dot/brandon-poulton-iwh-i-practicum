@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet' href='/css/style.css')
+  body
+    h1 Add a Practicum Item
+    form(method='POST' action='/update-cobj')
+      label Name:
+      input(type='text' name='name' required)
+      br
+      label Category:
+      input(type='text' name='category' required)
+      br
+      label Description:
+      textarea(name='description' required)
+      br
+      button(type='submit') Submit
+    a(href='/') Return to the homepage
