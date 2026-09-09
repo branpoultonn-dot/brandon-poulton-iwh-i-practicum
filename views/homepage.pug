@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet' href='/css/style.css')
+  body
+    h1 Practicum Items
+    a(href='/update-cobj') Add to this table
+    table
+      tr
+        th Name
+        th Category
+        th Description
+      each record in records
+        tr
+          td= record.properties.name
+          td= record.properties.category
+          td= record.properties.description
